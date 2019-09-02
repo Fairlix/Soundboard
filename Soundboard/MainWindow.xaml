@@ -1,0 +1,242 @@
+﻿<Window x:Class="Soundboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Soundboard"
+        mc:Ignorable="d"
+        Title="Customizable Soundboard 1.0" Height="555" Width="713" ResizeMode="CanMinimize">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+
+            <!-- Help button -->
+            <StackPanel>
+                <Button Height="25" Width="50" Margin="0,0,0,5"
+                 HorizontalAlignment="Left"
+                 Content="Help"
+                 Command="{Binding BtnHelp}"
+                        ></Button>
+            </StackPanel>
+
+            <!-- Row 1 -->
+            <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Button Width="200" Height="25" Margin="5"
+                    Content="{Binding BtnLeft1, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnLeft1PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnLeft1ChooseDirectoryCommand}"
+                    ></Button>
+
+                <Button Width="200" Height="25" Margin="50, 5, 5, 5"
+                    Content="{Binding BtnRight1, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnRight1PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnRight1ChooseDirectoryCommand}"
+                    ></Button>
+            </StackPanel>
+            <!-- Row 2 -->
+            <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Button Width="200" Height="25" Margin="5"
+                    Content="{Binding BtnLeft2, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnLeft2PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnLeft2ChooseDirectoryCommand}"
+                    ></Button>
+
+                <Button Width="200" Height="25" Margin="50, 5, 5, 5"
+                    Content="{Binding BtnRight2, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnRight2PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnRight2ChooseDirectoryCommand}"
+                    ></Button>
+            </StackPanel>
+            <!-- Row 3 -->
+            <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Button Width="200" Height="25" Margin="5"
+                    Content="{Binding BtnLeft3, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnLeft3PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnLeft3ChooseDirectoryCommand}"
+                    ></Button>
+
+                <Button Width="200" Height="25" Margin="50, 5, 5, 5"
+                    Content="{Binding BtnRight3, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnRight3PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnRight3ChooseDirectoryCommand}"
+                    ></Button>
+            </StackPanel>
+            <!-- Row 4 -->
+            <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Button Width="200" Height="25" Margin="5"
+                    Content="{Binding BtnLeft4, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnLeft4PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnLeft4ChooseDirectoryCommand}"
+                    ></Button>
+
+                <Button Width="200" Height="25" Margin="50, 5, 5, 5"
+                    Content="{Binding BtnRight4, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnRight4PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnRight4ChooseDirectoryCommand}"
+                    ></Button>
+            </StackPanel>
+            <!-- Row 5 -->
+            <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Button Width="200" Height="25" Margin="5"
+                    Content="{Binding BtnLeft5, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnLeft5PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnLeft5ChooseDirectoryCommand}"
+                    ></Button>
+
+                <Button Width="200" Height="25" Margin="50, 5, 5, 5"
+                    Content="{Binding BtnRight5, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnRight5PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnRight5ChooseDirectoryCommand}"
+                    ></Button>
+            </StackPanel>
+            <!-- Row 6 -->
+            <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Button Width="200" Height="25" Margin="5"
+                    Content="{Binding BtnLeft6, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnLeft6PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnLeft6ChooseDirectoryCommand}"
+                    ></Button>
+
+                <Button Width="200" Height="25" Margin="50, 5, 5, 5"
+                    Content="{Binding BtnRight6, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnRight6PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnRight6ChooseDirectoryCommand}"
+                    ></Button>
+            </StackPanel>
+            <!-- Row 7 -->
+            <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Button Width="200" Height="25" Margin="5"
+                    Content="{Binding BtnLeft7, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnLeft7PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnLeft7ChooseDirectoryCommand}"
+                    ></Button>
+
+                <Button Width="200" Height="25" Margin="50, 5, 5, 5"
+                    Content="{Binding BtnRight7, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnRight7PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnRight7ChooseDirectoryCommand}"
+                    ></Button>
+            </StackPanel>
+            <!-- Row 8 -->
+            <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Button Width="200" Height="25" Margin="5"
+                    Content="{Binding BtnLeft8, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnLeft8PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnLeft8ChooseDirectoryCommand}"
+                    ></Button>
+
+                <Button Width="200" Height="25" Margin="50, 5, 5, 5"
+                    Content="{Binding BtnRight8, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnRight8PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnRight8ChooseDirectoryCommand}"
+                    ></Button>
+            </StackPanel>
+            <!-- Row 9 -->
+            <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Button Width="200" Height="25" Margin="5"
+                    Content="{Binding BtnLeft9, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnLeft9PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnLeft9ChooseDirectoryCommand}"
+                    ></Button>
+
+                <Button Width="200" Height="25" Margin="50, 5, 5, 5"
+                    Content="{Binding BtnRight9, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnRight9PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnRight9ChooseDirectoryCommand}"
+                    ></Button>
+            </StackPanel>
+            <!-- Row 10 -->
+            <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Button Width="200" Height="25" Margin="5"
+                    Content="{Binding BtnLeft10, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnLeft10PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnLeft10ChooseDirectoryCommand}"
+                    ></Button>
+
+                <Button Width="200" Height="25" Margin="50, 5, 5, 5"
+                    Content="{Binding BtnRight10, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding BtnRight10PlaySoundCommand}"
+                    ></Button>
+                <Button Width="100" Height="25" Margin="5"
+                    Content="Load file"
+                    Command="{Binding BtnRight10ChooseDirectoryCommand}"
+                    ></Button>
+            </StackPanel>
+
+            <!-- Stop Button -->
+            <StackPanel>
+                <Button HorizontalAlignment="Center" Background="#bf6060"
+                        Height="25" Width="75" Margin="5"
+                        Content="Stop" FontWeight="Bold"
+                        Command="{Binding BtnStop}"
+                        ></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
